@@ -1,0 +1,144 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f0f4ff, #e2f0ff);
+    color: #2c3e50;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    margin: 0;
+    animation: pop 0.7s ease-out;
+  }
+  
+  @keyframes pop {
+    0% { transform: scale(0.9); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    background-color: #374151;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Main content */
+  .card {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .cipher-card h2 {
+    color: #1e3a8a;
+    margin-bottom: 20px;
+  }
+  
+  .cipher-form label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 600;
+  }
+  
+  .cipher-form textarea,
+  .cipher-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 16px;
+    transition: border 0.3s, box-shadow 0.3s;
+  }
+  
+  .cipher-form textarea:focus,
+  .cipher-form input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.3);
+    outline: none;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .btn-group button {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  .btn-group button:hover {
+    background-color: #1e40af;
+    transform: scale(1.05);
+  }
+  
+  .result-box {
+    background: #ecfdf5;
+    border: 1px solid #34d399;
+    padding: 15px;
+    border-radius: 10px;
+    color: #065f46;
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e3a8a;
+    color: white;
+  }
+  

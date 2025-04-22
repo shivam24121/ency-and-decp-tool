@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Encryption & Decryption Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1 class="main-title">🔐 Encryption & Decryption Tool</h1>
+    <nav>
+      <ul>
+        <li><a href="#" onclick="loadCipher('caesar')">Caesar Cipher</a></li>
+        <li><a href="#" onclick="loadCipher('vigenere')">Vigenère Cipher</a></li>
+        <li><a href="#" onclick="loadCipher('railfence')">Rail Fence Cipher</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="content" class="card fade-in">
+    <h2>Welcome!</h2>
+    <p>Select a cipher from the menu above to start encrypting or decrypting your messages.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Encryption & Decryption Tool. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
